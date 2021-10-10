@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id="page-title">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./index.js" defer></script>
     <link rel="stylesheet" href="./styles.css" />
-    <title>Tasks manager</title>
+    <title >Tasks manager</title>
 </head>
 <body>
+    <div id="head-container">
+        <h1 id="title">KANBAN - Your Personal Task Organizer</h1>
+        <div id="search-div">
+            <input id="search-input" type="text" placeholder="Search a task...">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="api">
+            <button id="load-api">Load</button>
+            <button id="update-api">Update</button>
+        </div>
+    </div>
+    <div id="main-container">
+        <section id="to-do-section" class="section">
+            <header class="section-header">To Do Tasks</header>
+            <ul id="to-do-list" class="to-do-tasks list"></ul>
+            <div class = "add-class">
+                <input id="add-to-do-task" class="section-input" type="text" placeholder="Add to do task">
+                <button id="submit-add-to-do">Add Task</button>
+            </div>
+        </section>
+        <section id="in-progress-section" class="section">
+            <header class="section-header">In Progress Tasks</header>
+            <ul id="in-progress-list" class="in-progress-tasks list"></ul>
+            <div class = "add-class">
+                <input id="add-in-progress-task" class="section-input" type="text" placeholder="Add in progress task">
+                <button id="submit-add-in-progress">Add Task</button>
+            </div>
+        </section>
+        <section id="done-section" class="section">
+            <header class="section-header">Done Tasks</header>
+            <ul id="done-list" class="done-tasks list"></ul>
+            <div class = "add-class">
+                <input id="add-done-task" class="section-input" type="text" placeholder="Add done task">
+                <button id="submit-add-done">Add Task</button>
+            </div>
+        </section>
 </body>
 </html>

@@ -1,0 +1,88 @@
+#head-container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background-color:mediumaquamarine;
+}
+#search-div{
+    margin-top: 3%;
+    margin-left: 5%;
+}
+#api{
+    margin-top: 3%;
+    margin-left: 1%;
+}
+#main-container{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    background-color:mediumaquamarine;
+    text-align: center;
+}
+.section{
+    border: 1px solid black;
+    display: flex;
+    flex-flow: column;
+}
+.section-header{
+    font-family: 'Orbitron', sans-serif;
+    color: slategray(0, 0, 0);
+    font-size: 1.5em;
+    text-align: center;
+    justify-content: center;
+    justify-content: stretch;
+    border-bottom: 1px solid black; 
+}
+
+.list{
+    padding-right: 20%;
+    padding-left: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.task{
+    width: 200px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: black;
+    margin-right: 10%;
+    margin: 1%;
+    padding: 2%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+.task:hover {
+    background-color:black;
+    color: whitesmoke;
+}
+
+li{
+    list-style: none;
+}
+
+.add-class{
+    padding-right: 3%;
+    padding-left: 7%;
+    padding-top: 7%;
+    padding-bottom: 1%;
+}
+
+#deadline-form{
+    display: none;
+}
+
+.dates-button{
+    margin-left: 10%;
+    width: 70px;
+}
+.deadline-button{
+    margin-left: 10%;
+    width: 70px;
+}
+.delete-button{
+    margin-left: 10%;
+    width: 70px;
+}
